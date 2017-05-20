@@ -2,41 +2,41 @@ function newGoogle(url) {
 	var tagGoogle = window.open();
 	tagGoogle.location.href = url;
 }
+
 function newFacebook(url) {
 	var tagFacebook = window.open();
 	tagFacebook.location.href = url;
 }
+
 function myFunction() {
-    var form = document.createElement("P");
-    document.body.appendChild(form);
-    form.innerHTML = 'Form Đăng Ký';
+	 var w = window.open();
+	w.document.open();
 
-    var form = document.createElement("P");
-    document.body.appendChild(form);
-    form.innerHTML = 'Username: <input type="text">';
+	w.document.write('<h4>Form Đăng Ký</h4>');
+	w.document.write('Username: <input type="text"></br></br>');
+	w.document.write('Password: <input type="password" style="margin-left:2px;"></br></br>');
+	w.document.write('Ho Ten: <input type="text" style="margin-left:15px;"></br></br>');
+	w.document.write('Email: <input type="text" style="margin-left:23px;"></br></br>');
 
-    var form = document.createElement("P");
-    document.body.appendChild(form);
-    form.innerHTML = 'Password: <input type="password" style="margin-left:2px;">';
-
-    var form = document.createElement("P");
-    document.body.appendChild(form);
-    form.innerHTML = 'Ho Ten: <input type="text" style="margin-left:15px;">';
-
-    var form = document.createElement("P");
-    document.body.appendChild(form);
-    form.innerHTML = 'Email: <input type="text" style="margin-left:23px;">';
-
-    var but = document.createElement("button");
-    document.body.appendChild(but);
-    but.innerHTML = 'Dang Ky';
-    but.setAttribute('class','bnt');
-
+	var but = document.createElement("button");
+	but.id=('bnt');
+    w.document.body.appendChild(but);
+    but.innerHTML = 'Đăng Ký';
+    
     var dk = {
-	    	action: function() {
+	    	message: function() {
 			alert('Đăng Ký Thành Công');
 		},
     }
-    but.addEventListener('click',dk.action);
+    but.addEventListener('click',dk.message);
+
+	w.document.close();
+
+
 
 }
+
+
+
+
+	

@@ -1,3 +1,11 @@
-.bnt{
+#bnt{
 	margin-left: 110px;
+}
+button {
+	border: 1px solid black;
+    background: #da6e6e;
+}
+body{
+	width: 500px;
+	margin:20px auto;
 }
