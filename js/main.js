@@ -17,6 +17,7 @@ function myFunction() {
 	w.document.write('Password: <input type="password" style="margin-left:2px;"></br></br>');
 	w.document.write('Ho Ten: <input type="text" style="margin-left:15px;"></br></br>');
 	w.document.write('Email: <input type="text" style="margin-left:23px;"></br></br>');
+	w.document.write('<link rel="stylesheet" href="./css/style.css">')
 
 	var but = document.createElement("button");
 	but.id=('bnt');
